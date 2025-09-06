@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pseudocode-Belegsatz-Onepager</title>
+    <title>Pseudocode-Belegsatz-Onepager_v2.0_06.09.2025</title>
     <style>
         * {
             margin: 0;
@@ -503,11 +503,11 @@
                     <div class="version-info">
                         <div class="version-badge">
                             <span class="version-label">Version</span>
-                            <span class="version-number">1.0</span>
+                            <span class="version-number">2.0</span>
                         </div>
                         <div class="date-info">
                             <span class="date-label">Stand</span>
-                            <span class="date-number">31.08.2025</span>
+                            <span class="date-number">06.09.2025</span>
                         </div>
                     </div>
                     
@@ -527,6 +527,10 @@
                         <div class="credit-item">
                             <span class="credit-icon">💻</span>
                             <span class="credit-text">Umsetzung: Markus Wolf & <a href="https://claude.ai" target="_blank" style="color: #4ec9b0; text-decoration: none;">Claude</a></span>
+                        </div>
+                        <div class="credit-item">
+                            <span class="credit-icon">✅</span>
+                            <span class="credit-text">Endkontrolle: Patrick Rieger</span>
                         </div>
                     </div>
                 </div>
@@ -761,7 +765,7 @@
                     
                     <div class="comparison-card">
                         <h4>Vergleichsoperatoren</h4>
-                        <p><strong>Fast alle gleich:</strong> Die meisten Vergleichsoperatoren funktionieren genauso wie in C#. Einzige Ausnahme: <code><></code> für "ungleich" statt C#s <code>!=</code>.</p>
+                        <p><strong>Fast alle gleich:</strong> Die meisten Vergleichsoperatoren funktionieren genauso wie in C#. Eine Ausnahme: <code><></code> für "ungleich" statt C#s <code>!=</code>.</p>
                         <div class="code-comparison">
                             <div class="code-block csharp">
                                 <strong>C#:</strong><br>
@@ -784,7 +788,7 @@
                             </div>
                             <div class="code-block pseudocode">
                                 <strong>Pseudocode:</strong><br>
-                                <code><span class="variable">alter</span> <span class="operator">>=</span> <span class="number">18</span> <span class="keyword">AND</span> <span class="variable">fuehrerschein</span><br><span class="variable">wochenende</span> <span class="keyword">OR</span> <span class="variable">urlaub</span><br><span class="keyword">NOT</span> <span class="variable">regen</span></code>
+                                <code><span class="variable">alter</span> <span class="operator">>=</span> <span class="number">18</span> <span class="operator">&&</span> <span class="variable">fuehrerschein</span><br><span class="variable">wochenende</span> <span class="keyword">OR</span> <span class="variable">urlaub</span><br><span class="keyword">NOT</span> <span class="variable">regen</span></code>
                             </div>
                         </div>
                     </div>
@@ -799,7 +803,7 @@
                             </div>
                             <div class="code-block pseudocode">
                                 <strong>Pseudocode:</strong><br>
-                                <code><span class="variable">summe</span> <span class="operator">:=</span> <span class="variable">a</span> <span class="operator">+</span> <span class="variable">b</span><br><span class="variable">differenz</span> <span class="operator">:=</span> <span class="variable">a</span> <span class="operator">-</span> <span class="variable">b</span><br><span class="variable">produkt</span> <span class="operator">:=</span> <span class="variable">a</span> <span class="operator">*</span> <span class="variable">b</span><br><span class="variable">quotient</span> <span class="operator">:=</span> <span class="variable">a</span> <span class="operator">/</span> <span class="variable">b</span><br><span class="variable">rest</span> <span class="operator">:=</span> <span class="variable">a</span> <span class="keyword">MOD</span> <span class="variable">b</span></code>
+                                <code><span class="variable">summe</span> <span class="operator">:=</span> <span class="variable">a</span> <span class="operator">+</span> <span class="variable">b</span><br><span class="variable">differenz</span> <span class="operator">:=</span> <span class="variable">a</span> <span class="operator">-</span> <span class="variable">b</span><br><span class="variable">produkt</span> <span class="operator">:=</span> <span class="variable">a</span> <span class="operator">*</span> <span class="variable">b</span><br><span class="variable">quotient</span> <span class="operator">:=</span> <span class="variable">a</span> <span class="operator">/</span> <span class="variable">b</span><br><span class="variable">rest</span> <span class="operator">:=</span> <span class="variable">a</span> <span class="operator">%</span> <span class="variable">b</span></code>
                             </div>
                         </div>
                     </div>
@@ -1281,6 +1285,29 @@ BEDINGUNGEN:
                 });
             });
         });
+        
+        // Scroll to Top Button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        
+        // Nur ausführen wenn das Element existiert
+        if (scrollToTopBtn) {
+            // Button anzeigen/verstecken basierend auf Scroll-Position
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 100) {
+                    scrollToTopBtn.classList.add('show');
+                } else {
+                    scrollToTopBtn.classList.remove('show');
+                }
+            });
+            
+            // Nach oben scrollen beim Klick
+            scrollToTopBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
     </script>
 </body>
 </html>
