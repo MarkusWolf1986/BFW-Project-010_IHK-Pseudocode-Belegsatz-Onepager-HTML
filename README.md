@@ -100,11 +100,6 @@ Verbesserungsvorschläge, Fehlerberichte und Erweiterungen sind willkommen!
 - Fork das Repository und erstelle einen Pull Request
 - Teile das Tool mit anderen Auszubildenden und Studenten
 
-## 🔗 Links
-
-- [GitHub Repository](https://github.com/username/pseudocode-onepager)
-- [Live Demo](https://username.github.io/pseudocode-onepager/)
-
 ## 📞 Kontakt
 
 Bei Fragen oder Anregungen kannst du gerne ein Issue erstellen oder direkt Kontakt aufnehmen.
